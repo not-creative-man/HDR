@@ -74,17 +74,15 @@
 <body>
     <div class="container">
         <div class="txt">
-            <p class="text">В этой лабораторной работе реализовано сравнение преобразования в черно-белое изображение<br>
-            посредством использования инструментов фотошопа и применяя алгоритм преобразования в черно-белое изменением каждого пикселя<br>
-            на среднее арифметическое их красной, зеленой и голубой компонент. Также используя кнопку "Photoshop algorythm"<br>
-            можно получить преобразование в черно-белое простейшим алгоритмом, который используется фотошопом.<br>
-            Для получения каждого из форматов изображения нужно нажать на кнопку с интересующей обработкой<br>
-            После получения чб изображений от фотошопа и от алгоритма, нажмите на кнопку "Heatmap" для получения тепловой карты</p>
+            <p class="text">В этой лабораторной работе реализовано сравнение HDR изображения<br>
+            из фотошопа и HDR изображения стороннего сервиса.<br>
+            Для сравнения изображений используем тепловую карту, которая преобразует изображение в красно-зеленое, заменяя разницу пикселей<br>
+            Для подгрузки изображений используем кнопки "Photoshop HDR" и "Another HDR".<br>После получения HDR-изображений получаем тепловую карту кнопкой "Heatmap"</p>
         </div>
         <div class="button">
             <input type="button" value="Original image" id="button" onclick="chooseImage(this)"> 
             <input type="button" value="Photoshop HDR" onclick="getPhImage()">
-            <input type="button" value="Grayscale" onclick="getAnotherImage()">
+            <input type="button" value="Another HDR" onclick="getAnotherImage()">
             <input type="button" value="Heatmap" onclick="getHeatmap()">
         </div>
         <div class="original">
